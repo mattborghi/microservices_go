@@ -7,3 +7,7 @@ Building scalable, resilient, distributed applications in Go
 - Logger: MongoDB
 - Mail: sends email with a specific template
 - Listener: consumes messages in RabbitMQ and initiates a process.
+
+## Frontend
+
+Run using `go run ./frontend/cmd/main.go`

@@ -10,7 +10,7 @@ Building scalable, resilient, distributed applications in Go
 
 ## Frontend
 
-Run using `go run ./frontend/cmd/main.go`
+Run using `go run ./frontend/cmd/web/`
 
 ## Broker
 

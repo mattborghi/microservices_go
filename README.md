@@ -11,3 +11,11 @@ Building scalable, resilient, distributed applications in Go
 ## Frontend
 
 Run using `go run ./frontend/cmd/main.go`
+
+## Broker
+
+Init by doing `go mod init broker`.
+
+Installed some packages from [chi](https://github.com/go-chi/chi) doing `go get github.com/go-chi/cors`
+
+Run using `go run ./broker/cmd/api/`

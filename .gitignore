@@ -26,4 +26,4 @@ brokerApp
 authApp
 
 # DB data
-project/db-data/
+project/db-data/postgres/

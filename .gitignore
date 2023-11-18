@@ -24,6 +24,7 @@ go.work
 frontApp
 brokerApp
 authApp
+loggerApp
 
 # DB data
 project/db-data/postgres/

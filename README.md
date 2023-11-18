@@ -24,6 +24,10 @@ Run using `go run ./broker/cmd/api/`
 
 Similarly as Broken. It connects to a PostgreSQL database to handle User data.
 
+## Logger
+
+Connected to MongoDB database from `go get go.mongodb.org/mongo-driver/mongo`.
+
 # Set up
 
 Run `cd projects && make up_build` to executables for the go microservices and build and run the dockerfiles.

@@ -2,13 +2,17 @@ package main
 
 import (
 	"net/http"
+
+	"github.com/tsawler/toolbox"
 )
 
 func (app *Config) Broker(w http.ResponseWriter, r *http.Request) {
-	payload := jsonResponse{
+	var tools toolbox.Tools
+
+	payload := toolbox.JSONResponse{
 		Error:   false,
 		Message: "Hit the broker",
 	}
 
-	_ = app.writeJSON(w, http.StatusOK, payload)
+	_ = tools.WriteJSON(w, http.StatusOK, payload)
 }

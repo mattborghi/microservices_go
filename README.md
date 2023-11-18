@@ -19,3 +19,17 @@ Init by doing `go mod init broker`.
 Installed some packages from [chi](https://github.com/go-chi/chi) doing `go get github.com/go-chi/cors`
 
 Run using `go run ./broker/cmd/api/`
+
+## Authentication
+
+Similarly as Broken. It connects to a PostgreSQL database to handle User data.
+
+# Set up
+
+Run `cd projects && make up_build` to executables for the go microservices and build and run the dockerfiles.
+
+Then run `make start` to spin up the front end server.
+
+Stop the frontend server with `make stop`.
+
+Take down the docker services with `make down`.

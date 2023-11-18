@@ -23,3 +23,7 @@ go.work
 # Program binaries
 frontApp
 brokerApp
+authApp
+
+# DB data
+project/db-data/

@@ -32,6 +32,10 @@ Connected to MongoDB database from `go get go.mongodb.org/mongo-driver/mongo`. T
 mongodb://admin:password@localhost:27017/logs?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false
 ```
 
+## Mail
+
+Mail service uses mailhog to simulate a mail service.
+
 # Set up
 
 Run `cd projects && make up_build` to executables for the go microservices and build and run the dockerfiles.

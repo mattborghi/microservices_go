@@ -34,7 +34,7 @@ mongodb://admin:password@localhost:27017/logs?authSource=admin&readPreference=pr
 
 ## Mail
 
-Mail service uses mailhog to simulate a mail service.
+Mail service uses mailhog to simulate a mail service. This is for dev purposes. Broker shouldn't communicate directly to the mail service via send email. If we want to send an email every time a user logs out from the system, the Broker should communicate with authentication service, find the user is not authenticated and let the auth service communicate with the email service.
 
 # Set up
 

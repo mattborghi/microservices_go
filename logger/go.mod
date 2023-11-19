@@ -14,11 +14,7 @@ require (
 	golang.org/x/crypto v0.0.0-20220622213112-05595931fe9d // direct
 	golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4 // direct
 	golang.org/x/text v0.7.0 // direct
-)
-
-require (
 	github.com/go-chi/chi/v5 v5.0.10 // direct
 	github.com/go-chi/cors v1.2.1 // direct
+	github.com/tsawler/toolbox v1.2.3 // direct
 )
-
-require github.com/tsawler/toolbox v1.2.3 // indirect

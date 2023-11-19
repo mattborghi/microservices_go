@@ -1,6 +1,7 @@
 package main
 
 import (
+	"logger/data"
 	"net/http"
 
 	"github.com/tsawler/toolbox"
@@ -24,7 +25,7 @@ func (app *Config) WriteLog(w http.ResponseWriter, r *http.Request) {
 		Data: requestPayload.Data,
 	}
 
-	err := app.Models.LogEntry.insert(event)
+	err := app.Models.LogEntry.Insert(event)
 	if err != nil {
 		tools.ErrorJSON(w, err)
 		return

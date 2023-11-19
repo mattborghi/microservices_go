@@ -28,3 +28,4 @@ loggerApp
 
 # DB data
 project/db-data/postgres/
+project/db-data/mongo/

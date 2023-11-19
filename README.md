@@ -8,6 +8,8 @@ Building scalable, resilient, distributed applications in Go
 - Mail: sends email with a specific template
 - Listener: consumes messages in RabbitMQ and initiates a process.
 
+![stack](./assets/stack.drawio.png)
+
 ## Frontend
 
 Run using `go run ./frontend/cmd/web/`

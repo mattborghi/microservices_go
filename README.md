@@ -26,7 +26,11 @@ Similarly as Broken. It connects to a PostgreSQL database to handle User data.
 
 ## Logger
 
-Connected to MongoDB database from `go get go.mongodb.org/mongo-driver/mongo`.
+Connected to MongoDB database from `go get go.mongodb.org/mongo-driver/mongo`. Test saved documents in the NoSQL database by installing MongoDB Compass with the following arguments:
+
+```
+mongodb://admin:password@localhost:27017/logs?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false
+```
 
 # Set up
 

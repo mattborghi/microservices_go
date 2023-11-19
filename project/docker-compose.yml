@@ -13,6 +13,16 @@ services:
       mode: replicated
       replicas: 1
 
+  logger:
+    build:
+      context: ./../logger
+      dockerfile: ./../logger/logger.dockerfile
+    restart: always
+    deploy:
+      mode: replicated
+      replicas: 1
+
+
   authentication:
     build:
       context: ./../authentication

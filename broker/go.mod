@@ -7,3 +7,5 @@ require (
 	github.com/go-chi/cors v1.2.1 // direct
 	github.com/tsawler/toolbox v1.2.3 // direct
 )
+
+require github.com/rabbitmq/amqp091-go v1.9.0 // indirect

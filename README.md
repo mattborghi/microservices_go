@@ -38,6 +38,12 @@ mongodb://admin:password@localhost:27017/logs?authSource=admin&readPreference=pr
 
 Mail service uses mailhog to simulate a mail service. This is for dev purposes. Broker shouldn't communicate directly to the mail service via send email. If we want to send an email every time a user logs out from the system, the Broker should communicate with authentication service, find the user is not authenticated and let the auth service communicate with the email service.
 
+## Listener
+
+Talks to Rabbit MQ. Broker pushes events to Rabbit MQ, a listener service pulls events from that queue and handles them.
+
+Doesn't have a cmd folder because it doesn't have an API, it just talks to the queue.
+
 # Set up
 
 Run `cd projects && make up_build` to executables for the go microservices and build and run the dockerfiles.

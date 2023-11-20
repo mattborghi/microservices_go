@@ -26,6 +26,7 @@ brokerApp
 authApp
 loggerApp
 mailApp
+listenerApp
 
 # DB data
 project/db-data/postgres/

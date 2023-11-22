@@ -8,7 +8,9 @@ Building scalable, resilient, distributed applications in Go
 - Mail: sends email with a specific template
 - Listener: consumes messages in RabbitMQ and initiates a process.
 
-Microservices are communicated between them (not the client) using RPC which is faster than (un)marshalling JSONs.
+Microservices are communicated between them (not the client) using gRPC which is faster than (un)marshalling JSONs. The difference between gRPC and RPC is that the former can communicate multiple services written in different programming languages.
+
+In order for gRPC to work we installed `go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.27` and `go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2`.
 
 ![stack](./assets/stack.drawio.png)
 

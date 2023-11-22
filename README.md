@@ -12,6 +12,12 @@ Microservices are communicated between them (not the client) using gRPC which is
 
 In order for gRPC to work we installed `go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.27` and `go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2`.
 
+Compiling the proto files requires installing protoc and then running:
+
+```
+protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative <target>
+```
+
 ![stack](./assets/stack.drawio.png)
 
 ## Frontend

@@ -8,6 +8,8 @@ Building scalable, resilient, distributed applications in Go
 - Mail: sends email with a specific template
 - Listener: consumes messages in RabbitMQ and initiates a process.
 
+Microservices are communicated between them (not the client) using RPC which is faster than (un)marshalling JSONs.
+
 ![stack](./assets/stack.drawio.png)
 
 ## Frontend

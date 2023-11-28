@@ -20,6 +20,9 @@ protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=p
 
 where `<target>` could be for example `logs.proto`.
 
+> [!IMPORTANT]  
+> If you see the error `protoc-gen-go: program not found or is not executable`, you may need to add go to your PATH. In my case, `export PATH="$PATH:$(go env GOPATH)/bin"`.
+
 ![stack](./assets/stack.drawio.png)
 
 ## Frontend

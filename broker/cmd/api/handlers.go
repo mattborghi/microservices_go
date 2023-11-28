@@ -251,10 +251,12 @@ func (app *Config) logItemViaRPC(w http.ResponseWriter, l LogPayload) {
 		return
 	}
 
-	rpcPayload := RPCPayload{
-		Name: l.Name,
-		Data: l.Data,
-	}
+	// now valid from go 1.8: https://tip.golang.org/doc/go1.8#language
+	rpcPayload := RPCPayload(l)
+	// rpcPayload := RPCPayload{
+	// 	Name: l.Name,
+	// 	Data: l.Data,
+	// }
 
 	var result string
 	err = client.Call("RPCServer.LogInfo", rpcPayload, &result)
@@ -293,10 +295,10 @@ func (app *Config) LogViaGRPC(w http.ResponseWriter, r *http.Request) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
 
-	_, err := c.WriteLog(ctx, &logs.LogRequest{
+	_, err = c.WriteLog(ctx, &logs.LogRequest{
 		LogEntry: &logs.Log{
 			Name: requestPayload.Log.Name,
-			Data: requestPayload.Log.Data
+			Data: requestPayload.Log.Data,
 		},
 	})
 	if err != nil {
